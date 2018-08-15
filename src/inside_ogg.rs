@@ -234,11 +234,11 @@ Support for async I/O
 
 This module provides support for asyncronous I/O.
 */
-pub mod async {
+pub mod async_io {
 
 	use super::*;
 	use ogg::OggReadError;
-	use ogg::reading::async::PacketReader;
+	use ogg::reading::async_io::PacketReader;
 	use futures::stream::Stream;
 	use tokio_io::AsyncRead;
 	use futures::{Async, Future, Poll};
